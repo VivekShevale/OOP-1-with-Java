@@ -20,9 +20,9 @@ public class Property_Binding extends Application {
  
     @Override
     public void start(Stage primaryStage) {
-        Circle circle=new Circle();
-        
         Pane pane=new Pane();
+        
+        Circle circle=new Circle();
         circle.centerXProperty().bind(pane.widthProperty().divide(2));
         circle.centerYProperty().bind(pane.heightProperty().divide(2));
        // circle.setCenterX(100);
