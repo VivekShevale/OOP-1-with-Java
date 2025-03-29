@@ -30,15 +30,16 @@ public class ColorLabelText extends Application {
         //rgb COLOR Method
         c2.setFill(Color.rgb(200, 150, 130, 0.6));
 
+        
+        StackPane root1=new StackPane();
+        root1.getChildren().add(c1);
+        
         Label l=new Label("JavaFX"); 
         //hsb COLOR Method
         l.setTextFill(Color.hsb(270, 0.6, 0.9));
 
-        StackPane root=new StackPane();
-        root.getChildren().add(c1);
-
-        StackPane root1=new StackPane();
-        root1.getChildren().addAll(c2,l);
+        StackPane root2=new StackPane();
+        root2.getChildren().addAll(c2,l);
 
 
         Text t=new Text(20,20,"JAVA is Fun");
@@ -50,7 +51,7 @@ public class ColorLabelText extends Application {
 
 
         HBox root3=new HBox();
-        root3.getChildren().addAll(root,root1,t);
+        root3.getChildren().addAll(root1,root2,t);
 
         Scene scene = new Scene(root3, 300, 250);
 
