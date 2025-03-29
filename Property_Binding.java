@@ -35,7 +35,7 @@ public class Property_Binding extends Application {
 
         Scene scene = new Scene(pane, 300, 250);
 
-        primaryStage.setTitle("Circle");
+        primaryStage.setTitle("PropertyBind");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
